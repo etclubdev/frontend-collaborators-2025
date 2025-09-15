@@ -1,0 +1,121 @@
+.seeking-process-section{
+    width: 1000px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.seeking-process-section .title{
+    background: linear-gradient(135deg, #47A8B4 0%, #5D3E91 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 2;
+}
+
+.seeking-process-section .process{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.seeking-process-section .banner{
+    width: 520px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 15px;
+    background: #D9D9D9;
+    box-shadow: 6px 7px 7px rgba(0, 0, 0, 0.25);
+}
+
+.seeking-process-section .rounds-container{
+    width: 390px;
+    height: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+}
+
+.seeking-process-section .rounds-bar{
+    width: 10%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.seeking-process-section .round-bar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 120px;
+}
+
+.seeking-process-section #last-bar{
+    height: auto;
+}
+
+
+.seeking-process-section .rounds-bar .circle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 700;
+    color: #fff;
+    width: 30px;
+    aspect-ratio: 1 / 1;
+    background: linear-gradient(316deg, #FFF -6.44%, #80DBF6 31.44%, #55B3E9 67.84%);
+    border-radius: 50%;
+}
+
+.seeking-process-section .rounds-bar .vertical{
+    width: 5px;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(316deg, #FFF -6.44%, #80DBF6 31.44%, #55B3E9 67.84%);
+}
+
+.seeking-process-section .rounds{
+    width: 80%;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.seeking-process-section .round-card{
+    width: 320px;
+    height: 100px;
+    border-radius: 15px;
+    background: linear-gradient(180deg, #AEE8FF 0.11%, #FDFDFD 107.4%);
+    box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.25);
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    box-sizing: border-box;
+}
+
+.seeking-process-section .round-card .name{
+    color: #178DE2;
+    text-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.25);
+    margin: 0;
+    text-align: center;
+}
+
+.seeking-process-section .round-card .detail{
+    font-size: 12px;
+    margin: 0;
+    color: #85868C;
+    font-weight: 500;
+    text-align: center;
+}

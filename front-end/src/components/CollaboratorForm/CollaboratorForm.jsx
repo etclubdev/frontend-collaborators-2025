@@ -6,8 +6,8 @@ import './CollaboratorForm.css';
 import { TextInput } from '../TextInput';
 import { RadioInput } from '../RadioInput';
 import { DateInput } from '../DatePicker/DatePicker';
-import { CountDownTimerV2 } from '../CountDownTimerV2';
 import { ConfirmedDialog } from "../ConfirmedDialog";
+import { Heading } from "../Typography";
 
 import { collaboratorSchema } from '../../schemas/collaborator.schema';
 import { formatDate, formatFormDate } from '../../utils/formatDate.util';
@@ -35,7 +35,7 @@ const className = [
 ]
 
 export const CollaboratorForm = ({ form, seekingInfo }) => {
-    const [isOpened, setIsOpened] = useState(true);
+    const [isOpened, setIsOpened] = useState(false);
     const [message, setMessage] = useState({});
 
     const {
@@ -77,11 +77,9 @@ export const CollaboratorForm = ({ form, seekingInfo }) => {
                     onClose={() => { setIsOpened(false) }}
                 />
             )}
-            <CountDownTimerV2 date={seekingInfo.date} />
-            <hr className="division-bar" />
             <div className="seeking-info-container">
-                <p className="name">{seekingInfo.formName}</p>
-                <p className="date">Hạn chót: {formatDate(seekingInfo.date)}</p>
+                <Heading level={1} className="name">{seekingInfo.formName}</Heading>
+                <p className="date">HẠN CHÓT: {formatDate(seekingInfo.date).toUpperCase()}</p>
             </div>
             <form noValidate onSubmit={handleSubmit(onSubmit)}>
                 {

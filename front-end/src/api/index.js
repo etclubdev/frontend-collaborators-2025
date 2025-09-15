@@ -3,6 +3,9 @@ import axios from "axios";
 const ENV = process.env.REACT_APP_ENV.trim() || "development";
 const API_BASE_URL = process.env.REACT_APP_API_BASE_URL;
 
+console.log(API_BASE_URL);
+
+
 let api;
 
 if (ENV === 'local'){
