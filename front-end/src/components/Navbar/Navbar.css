@@ -440,6 +440,7 @@
 
     .nav-section .searchbar-group {
         height: 25px;
+        width: 100px;
     }
 
     .nav-logo {
