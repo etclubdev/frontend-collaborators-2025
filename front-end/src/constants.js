@@ -22,51 +22,53 @@ export const dialogMessage = {
     }
 };
 
+export const finalUrl = "";
+
 export const navbarLinks = [
     {
         id: "about",
         label: "Về ET Club",
         dropdown: true,
         items: [
-            { id: "1st", label: "Giới thiệu", url: "https://www.etclub.vn/introduction" },
-            { id: "2nd", label: "Cơ cấu tổ chức", url: "https://www.etclub.vn/hr-structure" },
+            { id: "1st", label: "Giới thiệu", url: finalUrl + "/introduction" },
+            { id: "2nd", label: "Cơ cấu tổ chức", url: finalUrl + "/hr-structure" },
         ]
     },
-    { id: "activities", label: "Hoạt động", url: "https://www.etclub.vn/activities" },
+    { id: "activities", label: "Hoạt động", url: finalUrl + "/activities" },
     {
         id: "etzone",
         label: "ET Zone",
         dropdown: true,
         items: [
-            { id: "1st", label: "ET News", url: "https://www.etclub.vn/et-news" },
-            { id: "2nd", label: "ET Blog", url: "https://www.etclub.vn/ew-blog" },
+            { id: "1st", label: "ET News", url: finalUrl + "/et-news" },
+            { id: "2nd", label: "ET Blog", url: finalUrl + "/ew-blog" },
         ]
     },
     { id: "ctv", label: "Tìm kiếm CTV", url: "#" },
-    { id: "search", label: "Tìm kiếm", url: "https://www.etclub.vn/search", search: true } // thêm search
+    { id: "search", label: "Tìm kiếm", url: finalUrl + "/search", search: true } // thêm search
 ];
 
 export const footerLinks = [
     {
         "title": "Về ET Club",
         "links": [
-            { "id": "introduction", "label": "Giới thiệu", "url": "https://www.etclub.vn/introduction" },
-            { "id": "hr", "label": "Cơ cấu tổ chức", "url": "https://www.etclub.vn/hr-structure" }
+            { "id": "introduction", "label": "Giới thiệu", "url": finalUrl + "/introduction" },
+            { "id": "hr", "label": "Cơ cấu tổ chức", "url": finalUrl + "/hr-structure" }
         ]
     },
     {
         "title": "Hoạt động",
         "links": [
-            { "id": "programs", "label": "Chương trình", "url": "https://www.etclub.vn/activities" },
-            { "id": "et-news", "label": "ET News", "url": "https://www.etclub.vn/et-news" },
-            { "id": "et-blog", "label": "ET Blog", "url": "https://www.etclub.vn/et-blog" },
+            { "id": "programs", "label": "Chương trình", "url": finalUrl + "/activities" },
+            { "id": "et-news", "label": "ET News", "url": finalUrl + "/et-news" },
+            { "id": "et-blog", "label": "ET Blog", "url": finalUrl + "/et-blog" },
             { "id": "ctv", "label": "Tìm kiếm CTV", "url": "#" }
         ]
     },
     {
         "title": "Hỗ trợ",
         "links": [
-            { "id": "faqs", "label": "FAQs", "url": "https://www.etclub.vn/faqs" }
+            { "id": "faqs", "label": "FAQs", "url": finalUrl + "/faqs" }
         ]
     },
     {

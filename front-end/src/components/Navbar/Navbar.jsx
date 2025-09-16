@@ -109,7 +109,7 @@ const NavbarMenu = ({ isMobile, menuOpen, handleSetIsNavBarHovered }) => {
         }
 
         // Normal link
-        return link.url.startsWith('http') ? (
+        return link.id !== "ctv" ? (
           <a key={link.id} href={link.url} target="_blank" rel="noopener noreferrer" className="nav-item">
             <p className="nav-item-content">{link.label}</p>
           </a>
