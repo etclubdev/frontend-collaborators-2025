@@ -3,6 +3,8 @@
     width: 100vw;
     z-index: 1;
     height: 130vh;
+    overflow: hidden;
+
 }
 
 .seeking-banner-background {
