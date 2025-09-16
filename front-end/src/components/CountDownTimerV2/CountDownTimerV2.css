@@ -9,7 +9,7 @@
     padding: 20px;
     background: linear-gradient(270deg, rgba(15, 64, 129, 0.50) 28%, rgba(3, 13, 27, 0.50) 69%);
     border-radius: 15px;
-    box-shadow: 0 4px 4px rgba(0,0,0,0.25), 0 15px 4px rgba(0,0,0,0.25);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25), 0 15px 4px rgba(0, 0, 0, 0.25);
     font-family: 'BeVietnamPro', sans-serif;
     color: #fff;
     margin: 50px 0;
@@ -32,7 +32,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 80px; /* width card */
+    width: 80px;
+    /* width card */
     min-width: 60px;
     position: relative;
 }
@@ -79,4 +80,56 @@
 .countdown-container span {
     font-size: 30px;
     text-shadow: 0 4px 20.2px #FFF;
+}
+
+@media (max-width: 1200px) {
+    .countdown-container {
+        width: 80vw;
+        padding: 15px;
+    }
+
+    .countdown-cards-container {
+        width: 90vw;
+        gap: 30px;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .countdown-container {
+        height: 150px;
+    }
+
+    .countdown-cards-container {
+        width: 90vw;
+        gap: 10px;
+    }
+
+    .countdown-card-bg {
+        width: 50px;
+        height: 50px;
+    }
+
+    .countdown-card-number {
+        font-size: 25px;
+        font-weight: 700;
+    }
+
+    .countdown-card-label {
+        margin-top: 8px;
+        font-size: 10px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        font-style: italic;
+    }
+
+    .countdown-card {
+        width: 50px;
+    }
+
+    .countdown-container span {
+        font-size: 15px;
+
+    }
+
 }
