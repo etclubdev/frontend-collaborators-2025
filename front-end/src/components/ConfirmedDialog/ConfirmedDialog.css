@@ -1,0 +1,113 @@
+.modal-overlay {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-container {
+  background-color: white;
+  border-radius: 5px;
+  width: 450px;
+  height: 400px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-container {
+  position: absolute;
+  width: 450px;
+  height: 120px;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  top: -30px
+}
+
+.modal-icon {
+  width: 140px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: -50px;
+}
+
+.modal-content {
+  padding: 50px;
+  box-sizing: border-box;
+}
+
+.modal-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.modal-icon {
+  margin: 20px auto 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.modal-icon .icon {
+  font-size: 100px;
+  color: #fff;
+}
+
+.cancel-button {
+  width: 80%;
+  padding: 15px;
+  font-family: 'Montserrat';
+  color: #555;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  color: #fff;
+  transition: all 0.2s ease-in-out;
+}
+
+.modal-title {
+  font-weight: 500;
+  font-size: 28px;
+}
+
+.modal-desc{
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.modal-container.success .cancel-button,
+.modal-container.success .modal-icon {
+  background-color: #6FD649;
+}
+
+.modal-container.success .cancel-button:hover{
+  background-color: #55a737;
+}
+
+.modal-container.error .cancel-button, 
+.modal-container.error .modal-icon {
+  background-color: #F20000;
+}
+
+.modal-container.error .cancel-button:hover{
+  background-color: #c00202;
+}

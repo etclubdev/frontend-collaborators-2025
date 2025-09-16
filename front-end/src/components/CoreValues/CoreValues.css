@@ -1,0 +1,61 @@
+.core-values-section{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background-color: #ffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.core-values-container{
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'BeVietnamPro';
+    gap: 30px;
+    
+}
+
+.core-values-container .title{
+    line-height: 2;
+    width: fit-content;
+    background: linear-gradient(135deg, #47A8B4 0%, #5D3E91 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.core-values-container .value-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);  
+    gap: 30px; 
+    justify-content: center;
+    align-items: center;
+}
+
+.core-values-container .value{
+    width: 480px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    background: #dcfdff3a;
+    border-radius: 10px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+}
+
+.core-values-container .value-image {
+    width: 100px;
+}
+
+.core-values-container .value-text {
+    color: #0F4081;
+    font-weight: 500;
+}

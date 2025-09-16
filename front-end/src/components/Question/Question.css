@@ -1,0 +1,143 @@
+.question-container {
+    width: 800px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.question {
+    width: 100%;
+    padding: 10px 20px;
+    background: rgba(154, 153, 153, 0.13);
+    border-radius: 0.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.question:hover {
+    background: rgba(94, 93, 93, 0.13);
+}
+
+.question-content {
+    margin: 0;
+    font-weight: 500;
+}
+
+.question-button {
+    width: 20px;
+    margin: 0;
+}
+
+.answer {
+    width: 90%;
+    height: auto;
+    margin: 2vw;
+    padding-left: 2vw;
+    border-left: 0.2vw solid rgba(89, 191, 231, 0.62);
+}
+
+.answer-content {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.5;
+    opacity: 0.9;
+    white-space: pre-line;
+}
+
+.answer-enter {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: all 300ms ease;
+}
+
+.answer-enter-active {
+    max-height: 50vw;
+    opacity: 1;
+}
+
+.answer-exit {
+    max-height: 50vw;
+    opacity: 1;
+    overflow: hidden;
+    transition: all 400ms ease;
+}
+
+.answer-exit-active {
+    max-height: 0;
+    opacity: 0;
+}
+
+@media (min-width: 740px) and (max-width: 1024px) {
+    .question-container {
+        width: 600px;
+    }
+    
+    .question {
+        height: 40px;
+        border-radius: 8px;
+    }
+
+    .question-content {
+        font-size: 14px;
+    }
+
+    .question-button {
+        width: 16px;
+    }
+
+    .answer {
+        width: 90%;
+        height: auto;
+        margin: 2vw;
+        padding-left: 2vw;
+        border-left: 0.2vw solid rgba(89, 191, 231, 0.62);
+    }
+
+    .answer-content {
+        margin: 0;
+        font-size: 12px;
+        line-height: 1.5;
+        opacity: 0.9;
+        white-space: pre-line;
+    }
+}
+
+@media(max-width: 739px) {
+    .question-container {
+        width: 300px;
+    }
+    
+    .question {
+        height: 30px;
+        border-radius: 5px;
+    }
+
+    .question-content {
+        font-size: 10px;
+    }
+
+    .question-button {
+        width: 12px;
+    }
+
+    .answer {
+        width: 90%;
+        height: auto;
+        margin: 2vw;
+        padding-left: 2vw;
+        border-left: 0.2vw solid rgba(89, 191, 231, 0.62);
+    }
+
+    .answer-content {
+        margin: 0;
+        font-size: 10px;
+        line-height: 1.5;
+        opacity: 0.9;
+        white-space: pre-line;
+    }
+}

@@ -1,0 +1,194 @@
+.slider-section {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sliderWrapper {
+  width: 100%;
+  min-height: 60vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.slider-heading {
+  line-height: 2;
+  width: fit-content;
+  background: linear-gradient(135deg, #47A8B4 0%, #5D3E91 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Carousel container */
+.slideC {
+  position: relative;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  width: 362px;
+  height: 272px;
+}
+
+/* Slide */
+.slide {
+  width: 362px;
+  height: 272px;
+  position: absolute;
+  top: 0;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 500ms ease, opacity 500ms ease, visibility 500ms ease;
+}
+
+/* Reflection */
+.reflection {
+  position: absolute;
+  width: 100%;
+  height: 60px;
+  bottom: -60px;
+  border-radius: 12px;
+  transition: transform 500ms ease, opacity 500ms ease, visibility 500ms ease;
+}
+
+.sliderContent {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  align-items: flex-start;
+  font-family: "Lucida Sans", sans-serif;
+  position: relative;
+  box-sizing: border-box;
+  border: 1.5px solid rgba(255, 255, 255, 0.3);
+  /* viền nhẹ */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  transition: scale 0.2s ease-in-out;
+}
+
+.sliderContent:hover {
+  scale: 1.01;
+}
+
+.sliderContent img {
+  width: 500px;
+  aspect-ratio: 3 / 2;
+  border-radius: 16px;
+  position: relative;
+}
+
+.slider-modal {
+  width: 500px;
+  aspect-ratio: 3 / 2;
+  background-color: rgba(0, 0, 0, 0.63);
+  position: absolute;
+  z-index: 2;
+  bottom: 0;
+  border-radius: 16px;
+  font-family: 'BeVietnamPro';
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 50px;
+  gap: 20px;
+  box-sizing: border-box;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.slider-modal .modal-name {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  color: #ffffffe3;
+}
+
+.slider-modal .desc,
+.slider-modal .link {
+  text-align: justify;
+  font-size: 14px;
+  font-weight: 300;
+  color: #ffffffe3;
+}
+
+.sliderContent:hover .slider-modal {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.sliderContent .name {
+  width: 499px;
+  height: 100px;
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.3);
+  /* trắng mờ */
+  backdrop-filter: blur(10px);
+  /* hiệu ứng mờ */
+  -webkit-backdrop-filter: blur(10px);
+  /* Safari */
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  /* viền nhẹ */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-family: 'BeVietnamPro';
+  font-weight: 600;
+  color: #ffffffe3;
+}
+
+
+.sliderContent h2 {
+  margin: 16px 0;
+}
+
+.sliderContent p {
+  margin: 0 0 16px 0;
+}
+
+/* Buttons on left and right */
+.btns {
+  position: absolute;
+  top: 50%;
+  width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.btns .btn {
+  cursor: pointer;
+  pointer-events: all;
+  padding: 6px;
+  border-radius: 50%;
+  transition: scale 0.3s ease-in-out;
+}
+
+.btns .btn:hover {
+  scale: 1.1;
+}
+
+/* Optional: push buttons slightly outside the slide */
+.btns .left {
+  margin-left: -40px;
+}
+
+.btns .right {
+  margin-right: -60px;
+}
