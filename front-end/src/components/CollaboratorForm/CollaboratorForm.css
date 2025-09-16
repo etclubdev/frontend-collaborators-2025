@@ -1,0 +1,350 @@
+.collaborator-form {
+    width: 1000px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.collaborator-form form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.collaborator-form-control {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    box-sizing: border-box;
+    width: 80%;
+    min-height: 100px;
+    margin-bottom: 10px;
+}
+
+.collaborator-form-control label, .collaborator-form-radio .radio-label {
+    background: linear-gradient(135deg, #47A8B4 0%, #5D3E91 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 18px;
+}
+
+.collaborator-form-control input {
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    text-indent: 20px;
+    transition: box-shadow 0.3s ease-in-out;
+    color: #000;
+    font-family: 'BeVietnamPro';
+    border: 1px solid transparent;
+    border-radius: 12px;
+    background:
+        linear-gradient(#fff, #fff) padding-box,
+        linear-gradient(135deg, #47A8B4 0%, #5D3E91 100%) border-box;
+}
+
+.collaborator-form-control input:focus {
+    box-shadow: 0 0 8px rgba(71, 168, 180, 0.6);
+    background:
+        linear-gradient(#fff, #fff) padding-box,
+        linear-gradient(135deg, #47A8B4 0%, #5D3E91 100%) border-box;
+    border-color: transparent;
+}
+
+.collaborator-form-control input:-webkit-autofill {
+  -webkit-text-fill-color: #000 !important;
+  border: 1px solid rgb(47, 101, 108) !important;
+  border-radius: 12px;
+}
+
+.collaborator-form-radio {
+    width: 80%;
+    margin-bottom: 10px;
+}
+
+.collaborator-form-radio-container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-sizing: border-box;
+}
+
+.collaborator-form-radio input {
+    margin: 0 2vw 0 0;
+    appearance: none;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.50);
+    border: 1px solid rgba(0, 0, 0, 0.50);
+    cursor: pointer;
+    transition: 0.3s;
+    display: inline-block;
+    position: relative;
+    color: #000;
+}
+
+.note-text {
+    margin: 0;
+    font-size: 12px;
+    color: #ff000f;
+}
+
+.collaborator-form-radio input:checked {
+    background: rgba(71, 168, 180, 0.6);
+    border-color: black;
+    box-shadow: 0 0 1vw rgba(0, 150, 255, 0.6);
+}
+
+.collaborator-form-radio input:checked + .radio-value {
+    color: rgb(71, 167, 180);
+}
+
+.collaborator-form-radio-container .radio-value {
+    color: #0000007a;
+    font-size: 18px;
+}
+
+.collaborator-form-radio p {
+    color: #fff;
+    font-size: 1.3vw;
+}
+
+.department-link {
+    display: none;
+    font-size: 12px;
+    margin: 10px 0 0px 50px;
+    color: #000;
+}
+
+.label-selected .department-link {
+    display: block;
+}
+
+.collaborator-form-errors {
+    color: #ff000f;
+    font-size: 1.2vw;
+    line-height: 3vw;
+}
+
+/* Button */
+.collaborator-form-button {
+    margin-top: 50px;
+    width: 200px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    border: 1.5px solid #FFF;
+    background: radial-gradient(53.2% 22.92% at 49.6% 100%, rgba(255, 255, 255, 0.70) 0%, rgba(255, 255, 255, 0.00) 100%), 
+                radial-gradient(32.29% 32.29% at 50% 21.87%, rgba(255, 255, 255, 0.20) 0%, rgba(255, 255, 255, 0.00) 100%), 
+                linear-gradient(270deg, rgba(0, 0, 0, 0.40) 0%, rgba(0, 0, 0, 0.00) 50%, rgba(0, 0, 0, 0.40) 100%), 
+                #2976AF;
+    background-blend-mode: overlay, overlay, soft-light, normal;
+    box-shadow: 0 20px 16px -8px rgba(4, 163, 227, 0.38);
+    color: #fff;
+    font-family: "BeVietnamPro";
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.collaborator-form-button:hover {
+    box-shadow: 0 25px 20px -10px rgba(4, 163, 227, 0.45);
+    transform: translateY(-2px);
+}
+
+/* Active effect*/
+.collaborator-form-button:active {
+    box-shadow: 0 10px 8px -5px rgba(4, 163, 227, 0.30);
+    transform: translateY(1px);
+}
+
+/* Focus effect */
+.collaborator-form-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(71, 167, 180, 0.5);
+}
+
+/* Disabled state */
+.collaborator-form-button:disabled {
+    background: #999;
+    border: 1.5px solid #ccc;
+    box-shadow: none;
+    cursor: not-allowed;
+    color: #eee;
+    transform: none;
+}
+
+
+.collaborator-form-upload {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 30vw;
+    padding-bottom: 2.5vw;
+    border-radius: 0.8vw;
+    background: rgba(255, 255, 255, 0.40);
+    margin: auto;
+}
+
+#file-upload-title {
+    margin-left: 2.5vw;
+    width: fit-content;
+    font-size: 1.5vw;
+    font-weight: bold;
+    color: #fff;
+}
+
+.upload-box {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 80%;
+    border: 0.2vw dashed #ffffff;
+    background-color: rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+    border-radius: 0.8vw;
+    transition: all 0.3s ease-in-out;
+}
+
+.upload-box .collaborator-form-errors {
+    margin: 0.5vw 0 0 0;
+    font-style: italic;
+    line-height: 1vw;
+}
+
+#cvFile {
+    display: none;
+}
+
+.file-upload-desc {
+    color: #fff;
+    text-align: center;
+    font-weight: 900;
+    font-size: 1.5vw;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-bottom: 2vw;
+}
+
+.file-import-icon {
+    font-size: 3vw;
+    opacity: 0.8;
+}
+
+.file-upload-desc p {
+    margin: 0;
+}
+
+.file-upload-desc .files-supported {
+    font-size: 1.1vw;
+    font-weight: 100;
+}
+
+.custom-button {
+    display: inline-block;
+    padding: 1vw 2.2vw;
+    font-size: 1.5vw;
+    color: rgba(92, 94, 99, 0.70);
+    background-color: #fff;
+    border-radius: 0.8vw;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.custom-button:hover {
+    background-color: #ffffffc4;
+}
+
+#file-name {
+    display: block;
+    margin-top: 0.8vw;
+    font-size: 1.1vw;
+    color: #fff;
+}
+
+.collaborator-form-select {
+    width: 70vw;
+    min-height: 8vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.collaborator-form-select label {
+    color: #FFF;
+    font-size: 1.5vw;
+}
+
+.collaborator-form-select select option {
+    background: #95cae7;
+    color: #fff;
+    font-size: 1.2vw;
+    line-height: 2vw;
+}
+
+.collaborator-form-select select option:hover {
+    background: #58c7f9;
+    color: white;
+}
+
+.collaborator-form-select select {
+    background: rgba(255, 255, 255, 0.55);
+    color: #fff;
+    transition: all 0.3s ease, color 0.3s ease;
+}
+
+.collaborator-form-select select:not([value=""]),
+.collaborator-form-select select:focus-visible {
+    background: #ffffff !important;
+    color: #000 !important;
+}
+
+.collaborator-form .seeking-info-container {
+    width: 800px;
+    padding: 10px;
+    background: rgba(133, 134, 139, 0.208);
+    margin: 50px 0;
+    background: linear-gradient(270deg, rgba(15, 64, 129, 0.50) 28%, rgba(3, 13, 27, 0.50) 69%);
+    border-radius: 15px;
+    box-shadow: 0 4px 4px rgba(0,0,0,0.25), 0 15px 4px rgba(0,0,0,0.25);
+    font-family: 'BeVietnamPro', sans-serif;
+}
+
+.collaborator-form .seeking-info-container .name {
+    background: linear-gradient(90deg, #D1FDFF 0%, #FDDB92 99.27%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+
+.collaborator-form .seeking-info-container .date {
+    text-align: center;
+    font-weight: 700;
+    font-size: 14px;
+    margin-top: 0;
+    color: #fff;
+}
+
+.collaborator-form .division-bar {
+    width: 30%;
+    height: 0.3vw;
+    background: linear-gradient(270deg, rgba(19, 83, 167, 0.859) 27.82%, rgba(11, 51, 107, 0.5) 68.79%);
+    border: none;
+    margin: 4vw 0;
+}

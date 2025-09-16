@@ -1,0 +1,161 @@
+{
+  "form": [
+    {
+      "id": "full_name",
+      "label": "Họ và tên",
+      "inputType": "text",
+      "placeholder": "Ví dụ: Nguyễn Văn A"
+    },
+    {
+      "id": "email",
+      "label": "Email",
+      "inputType": "text",
+      "placeholder": "Ví dụ: example@gmail.com"
+    },
+    {
+      "id": "phone_number",
+      "label": "Số điện thoại",
+      "inputType": "text",
+      "placeholder": "Ví dụ: 0912345678"
+    },
+    {
+      "id": "dob",
+      "label": "Ngày sinh",
+      "inputType": "date"
+    },
+    {
+      "id": "gender",
+      "label": "Giới tính",
+      "inputType": "radio",
+      "options": [
+        { "id": "male", "label": "Nam" },
+        { "id": "female", "label": "Nữ" },
+        { "id": "other", "label": "Khác" }
+      ]
+    },
+    {
+      "id": "university",
+      "label": "Bạn là sinh viên trường",
+      "inputType": "text",
+      "placeholder": "Ví dụ: Đại học Kinh tế TP.HCM"
+    },
+    {
+      "id": "cohort_name",
+      "label": "Bạn là sinh viên khóa",
+      "inputType": "text",
+      "placeholder": "Ví dụ: K51"
+    },
+    {
+      "id": "student_id",
+      "label": "MSSV của bạn là",
+      "inputType": "text",
+      "placeholder": "Ví dụ: 31250000000"
+    },
+    {
+      "id": "faculty",
+      "label": "Bạn thuộc khoa",
+      "inputType": "text",
+      "placeholder": "Ví dụ: Công nghệ thông tin kinh doanh"
+    },
+    {
+      "id": "major",
+      "label": "Bạn thuộc ngành",
+      "inputType": "text",
+      "placeholder": "Ví dụ: Công nghệ thông tin"
+    },
+    {
+      "id": "class",
+      "label": "Bạn thuộc lớp",
+      "inputType": "text",
+      "placeholder": "Ví dụ: IT0001"
+    },
+    {
+      "id": "department_name",
+      "label": "Bạn muốn ứng tuyển ban nào?",
+      "inputType": "radio",
+      "options": [
+        { "id": "tech", "label": "Ban Chuyên môn", "link": "" },
+        { "id": "hr", "label": "Ban Nhân sự - Tổ chức", "link": "" },
+        { "id": "pr", "label": "Ban Truyền thông", "link": "" },
+        { "id": "event", "label": "Ban Sự kiện", "link": "" },
+        { "id": "fer", "label": "Ban Tài chính - Đối ngoại", "link": "" }
+      ]
+    },
+    {
+      "id": "cv_type",
+      "label": "Dạng CV ứng tuyển",
+      "inputType": "radio",
+      "options": [
+        { "id": "cv-template", "label": "CV mẫu" },
+        { "id": "cv-custom", "label": "CV tự thiết kế" }
+      ]
+    },
+    {
+      "id": "cv_link",
+      "label": "Link CV",
+      "inputType": "text",
+      "placeholder": "Ví dụ: https://drive.google.com/drive/my-drive"
+    }
+  ],
+    "seekingInfo": {
+        "closingAnnouncement": "We will close this form in",
+        "date": "2025-10-12T00:00:00+07:00",
+        "formName": "Chương trình tìm kiếm CTV 09/2025"
+   },
+   "coreValues": {
+        "title": "NHỮNG GIÁ TRỊ MÀ CHÚNG TÔI THEO ĐUỔI",
+        "values": [
+            {
+                "id": "value-0",
+                "value": "Sáng tạo không ngừng",
+                "image": "/images/collaborators/value0.png"
+            },
+            {
+                "id": "value-1",
+                "value": "Tư duy giải quyết vấn đề",
+                "image": "/images/collaborators/value1.png"
+            },
+            {
+                "id": "value-2",
+                "value": "Hợp tác đa lĩnh vực",
+                "image": "/images/collaborators/value2.png"
+            },
+            {
+                "id": "value-3",
+                "value": "Ứng dụng thực tiễn",
+                "image": "/images/collaborators/value3.png"
+            },
+            {
+                "id": "value-4",
+                "value": "Học hỏi liên tục",
+                "image": "/images/collaborators/value4.png"
+            },
+            {
+                "id": "value-5",
+                "value": "Phát triển cá nhân và cộng đồng",
+                "image": "/images/collaborators/value5.png"
+            }
+        ]
+   },
+   "seekingProcessInfo": {
+        "title": "QUY TRÌNH TÌM KIẾM CỘNG TÁC VIÊN",
+        "banner": "/images/collaborators/seekingImage.png",
+        "rounds": [
+            {
+                "id": "round-1",
+                "name": "Vòng 1 - CV",
+                "detail": "Ứng viên điền form đăng ký và trả lời các câu hỏi liên quan kỹ năng, và động lực tham gia"
+            },
+            {
+                "id": "round-2",
+                "name": "Vòng 2 - Teamwork",
+                "detail": "Ứng viên tham gia vào các hoạt động nhóm để thể hiện kỹ năng làm việc và tư duy"
+            },
+            {
+                "id": "round-3",
+                "name": "Vòng 3 - Phỏng vấn",
+                "detail": "Ứng viên tham gia phỏng vấn, chia sẻ về kinh nghiệm và nguyện vọng bản thân"
+            }
+        ]
+   }
+}

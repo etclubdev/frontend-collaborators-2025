@@ -1,0 +1,21 @@
+.landing-page {
+    position: relative;
+    font-family: 'BeVietnamPro';
+}
+
+.landing-page-section {
+    position: relative;
+    top: -10vw;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+.division-bar {
+    width: 600px;
+    height: 1px;
+    background: linear-gradient(135deg, #47A8B4 0%, #5D3E91 100%);
+}
