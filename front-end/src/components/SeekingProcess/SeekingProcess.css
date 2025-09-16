@@ -1,4 +1,4 @@
-.seeking-process-section{
+.seeking-process-section {
     width: 1000px;
     height: 100vh;
     display: flex;
@@ -7,7 +7,7 @@
     justify-content: center;
 }
 
-.seeking-process-section .title{
+.seeking-process-section .title {
     background: linear-gradient(135deg, #47A8B4 0%, #5D3E91 100%);
     background-clip: text;
     -webkit-background-clip: text;
@@ -15,7 +15,7 @@
     line-height: 2;
 }
 
-.seeking-process-section .process{
+.seeking-process-section .process {
     width: 100%;
     height: 500px;
     display: flex;
@@ -24,7 +24,7 @@
     gap: 20px;
 }
 
-.seeking-process-section .banner{
+.seeking-process-section .banner {
     width: 520px;
     height: 300px;
     object-fit: cover;
@@ -33,7 +33,7 @@
     box-shadow: 6px 7px 7px rgba(0, 0, 0, 0.25);
 }
 
-.seeking-process-section .rounds-container{
+.seeking-process-section .rounds-container {
     width: 390px;
     height: 85%;
     display: flex;
@@ -42,7 +42,7 @@
     gap: 0;
 }
 
-.seeking-process-section .rounds-bar{
+.seeking-process-section .rounds-bar {
     width: 10%;
     height: 100%;
     display: flex;
@@ -50,7 +50,7 @@
     justify-content: center;
 }
 
-.seeking-process-section .round-bar{
+.seeking-process-section .round-bar {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -58,12 +58,12 @@
     height: 120px;
 }
 
-.seeking-process-section #last-bar{
+.seeking-process-section #last-bar {
     height: auto;
 }
 
 
-.seeking-process-section .rounds-bar .circle{
+.seeking-process-section .rounds-bar .circle {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -76,7 +76,7 @@
     border-radius: 50%;
 }
 
-.seeking-process-section .rounds-bar .vertical{
+.seeking-process-section .rounds-bar .vertical {
     width: 5px;
     flex-grow: 1;
     display: flex;
@@ -84,7 +84,7 @@
     background: linear-gradient(316deg, #FFF -6.44%, #80DBF6 31.44%, #55B3E9 67.84%);
 }
 
-.seeking-process-section .rounds{
+.seeking-process-section .rounds {
     width: 80%;
     height: 350px;
     display: flex;
@@ -92,7 +92,7 @@
     justify-content: space-between;
 }
 
-.seeking-process-section .round-card{
+.seeking-process-section .round-card {
     width: 320px;
     height: 100px;
     border-radius: 15px;
@@ -105,17 +105,120 @@
     box-sizing: border-box;
 }
 
-.seeking-process-section .round-card .name{
+.seeking-process-section .round-card .name {
     color: #178DE2;
     text-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.25);
     margin: 0;
     text-align: center;
 }
 
-.seeking-process-section .round-card .detail{
+.seeking-process-section .round-card .detail {
     font-size: 12px;
     margin: 0;
     color: #85868C;
     font-weight: 500;
     text-align: center;
+}
+
+@media (max-width: 1200px) {
+    .seeking-process-section {
+        width: 100vw;
+        height: 80vh;
+    }
+
+    .seeking-process-section .title {
+        text-align: center;
+    }
+
+    .seeking-process-section .process {
+        width: 100%;
+        flex-direction: column;
+        gap: 20px;
+        height: 700px;
+    }
+
+    .seeking-process-section .process img {
+        width: 600px;
+    }
+
+    .seeking-process-section .rounds-container {
+        width: 600px;
+    }
+
+    .seeking-process-section .rounds {
+        width: 400px;
+    }
+
+    .seeking-process-section .round-card {
+        width: 400px;
+    }
+}
+
+@media (max-width: 768px) {
+    .seeking-process-section {
+        width: 100vw;
+        height: 120vh;
+    }
+
+    .seeking-process-section .title {
+        width: 85%;
+        text-align: center;
+    }
+
+    .seeking-process-section .process {
+        width: 100%;
+        flex-direction: column;
+        gap: 20px;
+        height: 700px;
+    }
+
+    .seeking-process-section .process img {
+        width: 600px;
+    }
+
+    .seeking-process-section .rounds-container {
+        width: 600px;
+    }
+
+    .seeking-process-section .rounds {
+        width: 400px;
+    }
+
+    .seeking-process-section .round-card {
+        width: 400px;
+    }
+}
+
+@media (max-width: 480px) {
+    .seeking-process-section {
+        width: 100vw;
+        height: 120vh;
+    }
+
+    .seeking-process-section .title {
+        text-align: center;
+    }
+
+    .seeking-process-section .process {
+        width: 100%;
+        flex-direction: column;
+        gap: 20px;
+        height: 700px;
+    }
+
+    .seeking-process-section .process img {
+        width: 330px;
+    }
+
+    .seeking-process-section .rounds-container {
+        width: 330px;
+    }
+
+    .seeking-process-section .rounds {
+        width: 280px;
+    }
+
+    .seeking-process-section .round-card {
+        width: 280px;
+    }
 }

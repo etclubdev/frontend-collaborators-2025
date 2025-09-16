@@ -14,7 +14,7 @@ export const dialogMessage = {
         alertType: "error",
         Icon: CloseIcon
     },
-    error: {
+    errorMsg: {
         title: "Có lỗi xảy ra!",
         desc: "Đã có lỗi trong quá trình gửi thông tin. Vui lòng thử lại sau ít phút hoặc liên hệ với ET Club để được hỗ trợ.",
         alertType: "error",
