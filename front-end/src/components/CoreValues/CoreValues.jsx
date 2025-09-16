@@ -11,7 +11,7 @@ export const CoreValues = ({ coreValues }) => {
             {
                 coreValues.values.map(item => (
                     <div key={item.id} className="value">
-                        <img src={require(`../../mocks` + item.image)} alt={item.id} className="value-image" />
+                        <img loading="lazy" src={require(`../../assets` + item.image)} alt={item.id} className="value-image" />
                         <p className="value-text">{item.value}</p>
                     </div>
                 ))

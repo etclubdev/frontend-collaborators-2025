@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Heading } from "../Typography";
 import { sliderPrev, sliderNext } from "../../assets/images/vectors";
 import "./Slider.css";
-import { images } from "../../mocks/images/department";
+import { images } from "../../assets/images/department";
 
 export const Slider = ({ data, activeSlide = 0 }) => {
   const [current, setCurrent] = useState(activeSlide);
@@ -65,7 +65,7 @@ const SliderContent = ({ id, department_name, desc, link, icon, title }) => {
         <a className="link" href={link}>Tìm hiểu thêm</a>
       </div>
       <div className="name">{department_name.toUpperCase()}</div>
-      <img src={images[id]} alt="" />
+      <img loading="lazy" src={images[id]} alt="" />
     </div>
   );
 }

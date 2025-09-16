@@ -6,7 +6,7 @@ export const SeekingProcess = ({ seekingProcessInfo }) => {
     <div className="seeking-process-section">
         <Heading level={1} className="title">{seekingProcessInfo.title}</Heading>
         <div className="process">
-            <img className="banner" src={require("../../mocks" + seekingProcessInfo.banner)} alt={seekingProcessInfo.title} />
+            <img loading="lazy" className="banner" src={require("../../assets" + seekingProcessInfo.banner)} alt={seekingProcessInfo.title} />
             <div className="rounds-container">
                 <div className="rounds-bar">
                     {
