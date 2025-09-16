@@ -7,11 +7,12 @@ import { CoreValues } from "../../components/CoreValues";
 import { SeekingProcess } from "../../components/SeekingProcess";
 import { CollaboratorForm } from "../../components/CollaboratorForm";
 import { CountDownTimerV2 } from "../../components/CountDownTimerV2";
+import { Slider } from "../../components/Slider";
 
 import { useQuery } from '@tanstack/react-query';
 import { getAchievement } from '../../api/achievement.service';
 
-import { collaborators } from '../../mocks/data';
+import { collaborators, department } from '../../mocks/data';
 
 const { form, seekingInfo, coreValues, joinUsInfo, numbersInfo, seekingProcessInfo } = collaborators;
 
@@ -30,6 +31,7 @@ export const LandingPage = () => {
       <div className="landing-page-section">
         <Statistics statistics={data}/>
         <CoreValues coreValues={coreValues}/>
+        <Slider data={department} activeSlide={2}/>
         <SeekingProcess seekingProcessInfo={seekingProcessInfo}/>
         <hr className="division-bar"/>
         <CountDownTimerV2 targetDate={seekingInfo.date} />

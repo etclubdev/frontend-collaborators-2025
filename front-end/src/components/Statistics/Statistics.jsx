@@ -1,7 +1,6 @@
 import './Statistics.css';
 import { useRef } from 'react';
 import AnimatedNumber from './AnimatedNumber';
-import { STATISTICS_TITLE } from '../../constants';
 import { Heading } from '../Typography/Typography';
 import Skeleton from '@mui/material/Skeleton';
 import { statisticsBackground } from '../../assets/images/et';
