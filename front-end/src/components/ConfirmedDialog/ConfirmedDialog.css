@@ -111,3 +111,26 @@
 .modal-container.error .cancel-button:hover{
   background-color: #c00202;
 }
+
+@media (max-width: 480px) {
+  .modal-container {
+    width: 350px;
+    height: 350px;
+  }
+
+  .icon-container {
+    top: -10vw;
+  }
+
+  .icon-container .modal-icon {
+    width: 120px;
+  }
+
+  .modal-icon .icon {
+    font-size: 80px;
+  }
+
+  .modal-content {
+  padding: 20px 30px;
+}
+}

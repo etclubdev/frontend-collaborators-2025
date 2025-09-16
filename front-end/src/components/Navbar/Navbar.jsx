@@ -109,12 +109,12 @@ const NavbarMenu = ({ isMobile, menuOpen, handleSetIsNavBarHovered }) => {
         }
 
         // Normal link
-        return link.id !== "ctv" ? (
+        return (link.id !== "ctv") ? (
           <a key={link.id} href={link.url} target="_blank" rel="noopener noreferrer" className="nav-item">
             <p className="nav-item-content">{link.label}</p>
           </a>
         ) : (
-          <Link key={link.id} to={link.url} className="nav-item ctv">
+          <Link key={link.id} to={link.url} className={`nav-item ${!isMobile && "ctv"}`}>
             <p className="nav-item-content">{link.label}</p>
           </Link>
         );

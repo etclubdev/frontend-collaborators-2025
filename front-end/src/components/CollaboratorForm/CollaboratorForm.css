@@ -23,7 +23,8 @@
     margin-bottom: 10px;
 }
 
-.collaborator-form-control label, .collaborator-form-radio .radio-label {
+.collaborator-form-control label,
+.collaborator-form-radio .radio-label {
     background: linear-gradient(135deg, #47A8B4 0%, #5D3E91 100%);
     background-clip: text;
     -webkit-background-clip: text;
@@ -57,9 +58,9 @@
 }
 
 .collaborator-form-control input:-webkit-autofill {
-  -webkit-text-fill-color: #000 !important;
-  border: 1px solid rgb(47, 101, 108) !important;
-  border-radius: 12px;
+    -webkit-text-fill-color: #000 !important;
+    border: 1px solid rgb(47, 101, 108) !important;
+    border-radius: 12px;
 }
 
 .collaborator-form-radio {
@@ -102,7 +103,7 @@
     box-shadow: 0 0 1vw rgba(0, 150, 255, 0.6);
 }
 
-.collaborator-form-radio input:checked + .radio-value {
+.collaborator-form-radio input:checked+.radio-value {
     color: rgb(71, 167, 180);
 }
 
@@ -143,10 +144,10 @@
     align-items: center;
     border-radius: 15px;
     border: 1.5px solid #FFF;
-    background: radial-gradient(53.2% 22.92% at 49.6% 100%, rgba(255, 255, 255, 0.70) 0%, rgba(255, 255, 255, 0.00) 100%), 
-                radial-gradient(32.29% 32.29% at 50% 21.87%, rgba(255, 255, 255, 0.20) 0%, rgba(255, 255, 255, 0.00) 100%), 
-                linear-gradient(270deg, rgba(0, 0, 0, 0.40) 0%, rgba(0, 0, 0, 0.00) 50%, rgba(0, 0, 0, 0.40) 100%), 
-                #2976AF;
+    background: radial-gradient(53.2% 22.92% at 49.6% 100%, rgba(255, 255, 255, 0.70) 0%, rgba(255, 255, 255, 0.00) 100%),
+        radial-gradient(32.29% 32.29% at 50% 21.87%, rgba(255, 255, 255, 0.20) 0%, rgba(255, 255, 255, 0.00) 100%),
+        linear-gradient(270deg, rgba(0, 0, 0, 0.40) 0%, rgba(0, 0, 0, 0.00) 50%, rgba(0, 0, 0, 0.40) 100%),
+        #2976AF;
     background-blend-mode: overlay, overlay, soft-light, normal;
     box-shadow: 0 20px 16px -8px rgba(4, 163, 227, 0.38);
     color: #fff;
@@ -321,7 +322,7 @@
     margin: 50px 0;
     background: linear-gradient(270deg, rgba(15, 64, 129, 0.50) 28%, rgba(3, 13, 27, 0.50) 69%);
     border-radius: 15px;
-    box-shadow: 0 4px 4px rgba(0,0,0,0.25), 0 15px 4px rgba(0,0,0,0.25);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25), 0 15px 4px rgba(0, 0, 0, 0.25);
     font-family: 'BeVietnamPro', sans-serif;
 }
 
@@ -347,4 +348,34 @@
     background: linear-gradient(270deg, rgba(19, 83, 167, 0.859) 27.82%, rgba(11, 51, 107, 0.5) 68.79%);
     border: none;
     margin: 4vw 0;
+}
+
+@media (max-width: 1200px) {
+    .collaborator-form {
+        width: 100vw;
+    }
+
+    .collaborator-form .seeking-info-container {
+        width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    .collaborator-form {
+        width: 100vw;
+    }
+
+    .collaborator-form .seeking-info-container {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    .collaborator-form {
+        width: 100vw;
+    }
+
+    .collaborator-form .seeking-info-container {
+        width: 80%;
+    }
 }
