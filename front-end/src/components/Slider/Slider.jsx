@@ -82,7 +82,7 @@ const SliderContent = ({ id, department_name, desc, link, image }) => {
       <div className="slider-modal">
         <b className="modal-name">{department_name.toUpperCase()}</b>
         <p className="desc">{desc}</p>
-        <a className="link" href={link}>Tìm hiểu thêm</a>
+        <a className="link" target="_blank" rel="noopener noreferrer" href={link}>Tìm hiểu thêm</a>
       </div>
       <div className="name">{department_name.toUpperCase()}</div>
       <img loading="lazy" src={image} alt="" />
