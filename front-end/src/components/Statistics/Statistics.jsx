@@ -42,7 +42,7 @@ export const Statistics = ({ statistics }) => {
 
     return (
         <div className="statistics-section" ref={ref}>
-            {/* <img className="statistics-vector-1" src={statisticsVector2} /> */}
+            <img className="statistics-vector-1" src={statisticsVector2} />
             <div className="statistics-background"></div>
             <img
                 className="statistics-background-image"

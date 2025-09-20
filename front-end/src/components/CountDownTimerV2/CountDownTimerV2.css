@@ -7,9 +7,9 @@
     align-items: center;
     flex-wrap: nowrap;
     padding: 20px;
-    background: linear-gradient(270deg, rgba(15, 64, 129, 0.50) 28%, rgba(3, 13, 27, 0.50) 69%);
     border-radius: 15px;
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25), 0 15px 4px rgba(0, 0, 0, 0.25);
+    background: linear-gradient(90deg, #AA45BA 0%, #BEC2F7 99.27%);
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25), 0 4px 4px 0 rgba(0, 0, 0, 0.25), 0 4px 4px 0 rgba(100, 83, 167, 0.25), 0 15px 4px 0 rgba(100, 83, 167, 0.25);
     font-family: 'BeVietnamPro', sans-serif;
     color: #fff;
     margin: 50px 0;

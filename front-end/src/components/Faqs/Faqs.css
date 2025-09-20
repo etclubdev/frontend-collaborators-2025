@@ -20,7 +20,7 @@
     margin: 0;
     line-height: 2;
     width: fit-content;
-    background: linear-gradient(135deg, #47A8B4 0%, #5D3E91 100%);
+    background: linear-gradient(181deg, #5C53E4 -23.01%, #C778D3 48.92%, #CFAFD4 99.41%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -81,7 +81,8 @@
     height: auto;
     margin: 2vw;
     padding-left: 2vw;
-    border-left: 0.2vw solid rgba(89, 191, 231, 0.62);
+    border-left: 0.2vw solid rgba(151, 89, 231, 0.62);
+    line-height: 1.5;
 }
 
 .answer-content {
@@ -152,15 +153,7 @@
         height: auto;
         margin: 2vw;
         padding-left: 2vw;
-        border-left: 0.2vw solid rgba(89, 191, 231, 0.62);
-    }
-
-    .answer-content {
-        margin: 0;
-        font-size: 14px;
-        line-height: 1.5;
-        opacity: 0.9;
-        white-space: pre-line;
+        font-size: 15px;
     }
 }
 
@@ -201,7 +194,7 @@
         height: auto;
         margin: 2vw;
         padding-left: 2vw;
-        border-left: 0.2vw solid rgba(89, 191, 231, 0.62);
+        font-size: 12px;
     }
 
     .answer-content {
