@@ -15,9 +15,10 @@ import { RadioInput } from '../RadioInput';
 import { DateInput } from '../DatePicker/DatePicker';
 import { ConfirmedDialog } from "../ConfirmedDialog";
 import { Heading } from "../Typography";
+import { CircularLoading } from '../CircularLoading';
 
 import { collaboratorSchema } from '../../schemas/collaborator.schema';
-import { formatDate, formatFormDate } from '../../utils/formatDate.util';
+import { formatEndDate, formatFormDate } from '../../utils/formatDate.util';
 import { createApplication } from "../../api/application.service";
 import { dialogMessage } from "../../constants";
 
@@ -34,6 +35,7 @@ export const CollaboratorForm = ({ form, seekingInfo }) => {
     const [formDataToSubmit, setFormDataToSubmit] = useState(null);
     const [isOpenedNoti, setIsOpenedNoti] = useState(false);
     const [message, setMessage] = useState({});
+    const [loading, setLoading] = useState(false);
 
     const {
         control,
@@ -53,22 +55,29 @@ export const CollaboratorForm = ({ form, seekingInfo }) => {
 
     const handleConfirm = async () => {
         setIsDialogOpen(false);
+        setLoading(true);
+        
+        const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
         try {
+            await sleep(3000);
             const formatedData = { ...formDataToSubmit, dob: formatFormDate(formDataToSubmit.dob) };
             const { status, data } = await createApplication(formatedData);
-            console.log(data);
             if (status === 201) setMessage(success);
             reset();
         } catch (error) {
             if (error.status === 409) setMessage(notUniqueEmail);
             else setMessage(errorMsg);
         } finally {
+            setLoading(false);
             setIsOpenedNoti(true);
         }
     };
 
     return (
         <div className="collaborator-form">
+            {
+                loading && <CircularLoading />
+            }
             <SubmitDialog
                 isOpen={isDialogOpen}
                 handleClose={() => setIsDialogOpen(false)}
@@ -84,7 +93,7 @@ export const CollaboratorForm = ({ form, seekingInfo }) => {
 
             <div className="seeking-info-container">
                 <Heading level={1} className="name">{seekingInfo.formName}</Heading>
-                <p className="date">HẠN CHÓT: {formatDate(seekingInfo.date).toUpperCase()}</p>
+                <p className="date">HẠN CHÓT: {formatEndDate(seekingInfo.date).toUpperCase()}</p>
             </div>
 
             <form noValidate onSubmit={handleSubmit(onSubmit)}>
@@ -133,7 +142,7 @@ export const CollaboratorForm = ({ form, seekingInfo }) => {
                 })}
                 <button
                     type="submit"
-                    disabled={isSubmitting}
+                    disabled={loading}
                     className="collaborator-form-button"
                 >
                     Nộp đơn

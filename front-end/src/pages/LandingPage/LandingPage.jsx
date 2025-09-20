@@ -26,8 +26,7 @@ export const LandingPage = () => {
 
   return (
     <div className="landing-page">
-      
-      <Navbar />
+      {/* <Navbar /> */}
       <SeekingBanner />
       <div className="landing-page-section">
         <Statistics statistics={data}/>

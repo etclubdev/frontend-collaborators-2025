@@ -1,0 +1,16 @@
+.loading-container {
+  position: fixed;       
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: rgba(211, 211, 211, 0.5); 
+  backdrop-filter: blur(4px);         
+
+  z-index: 9999;
+}

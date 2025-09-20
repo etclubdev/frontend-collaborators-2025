@@ -33,7 +33,6 @@ const Question = ({ item }) => {
   const toggleAnswer = () => {
     setIsOpen(!isOpen);
   };
-  console.log(item);
 
   return (
     <div
@@ -53,7 +52,7 @@ const Question = ({ item }) => {
         unmountOnExit
       >
         <div className="answer">
-          <p className="answer-content">{item.answer}</p>
+          <p dangerouslySetInnerHTML={{ __html: item.answer }} />
         </div>
       </CSSTransition>
     </div>
