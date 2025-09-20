@@ -1,0 +1,24 @@
+.coming-soon-section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.coming-soon-section img {
+    width: 400px;
+}
+
+.coming-soon-section .title {
+    background: var(--bg-tuyen, linear-gradient(107deg, #3493C8 44.83%, #6AB8E0 68.38%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@media(max-width: 739px) {
+    .coming-soon-section img {
+        width: 80%;
+    }
+}

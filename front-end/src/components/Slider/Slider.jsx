@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { Heading } from "../Typography";
 import { sliderPrev, sliderNext } from "../../assets/images/vectors";
 import "./Slider.css";
-import { images } from "../../assets/images/department";
 
 export const Slider = ({ data, activeSlide = 0 }) => {
   const [current, setCurrent] = useState(activeSlide);

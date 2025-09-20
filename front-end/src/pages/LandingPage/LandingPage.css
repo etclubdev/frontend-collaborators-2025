@@ -1,6 +1,7 @@
 .landing-page {
     position: relative;
     font-family: 'BeVietnamPro';
+    overflow: hidden;
 }
 
 .landing-page-section {
@@ -19,3 +20,4 @@
     height: 1px;
     background: linear-gradient(135deg, #47A8B4 0%, #5D3E91 100%);
 }
+
