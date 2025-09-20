@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { Heading } from "../Typography";
 import { sliderPrev, sliderNext } from "../../assets/images/vectors";
 import "./Slider.css";
-import { images } from "../../assets/images/department";
 
 export const Slider = ({ data, activeSlide = 0 }) => {
   const [current, setCurrent] = useState(activeSlide);
@@ -77,7 +76,7 @@ export const Slider = ({ data, activeSlide = 0 }) => {
   );
 };
 
-const SliderContent = ({ id, department_name, desc, link }) => {
+const SliderContent = ({ id, department_name, desc, link, image }) => {
   return (
     <div className="sliderContent">
       <div className="slider-modal">
@@ -86,7 +85,7 @@ const SliderContent = ({ id, department_name, desc, link }) => {
         <a className="link" href={link}>Tìm hiểu thêm</a>
       </div>
       <div className="name">{department_name.toUpperCase()}</div>
-      <img loading="lazy" src={images[id]} alt="" />
+      <img loading="lazy" src={image} alt="" />
     </div>
   );
 };

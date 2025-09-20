@@ -1,27 +1,27 @@
 [
-    {
-        "id": "faq-0",
-        "question": "Em không biết lập trình thì có thể làm kiểm tra không?",
-        "answer": ""
-    },
-    {
-        "id": "faq-1",
-        "question": "Chương trình tìm kiếm CTV kéo dài bao lâu?",
-        "answer": ""
-    },
-    {
-        "id": "faq-2",
-        "question": "Tuyển những ban gì và công việc của các ban đó như thế nào?",
-        "answer": ""
-    },
-    {
-        "id": "faq-3",
-        "question": "Khi nào có kết quả vòng đơn và khi nào phỏng vấn?",
-        "answer": ""
-    },
-    {
-        "id": "faq-4",
-        "question": "Mình có thể ứng tuyển bao nhiêu vị trí công việc?",
-        "answer": ""
-    }
+  {
+    "id": "faqs-1",
+    "question": "Em không biết lập trình thì có thể làm kiểm tra không?",
+    "answer": "<p>Chắc chắn rồi! Bạn hoàn toàn có thể tham gia ứng tuyển ngay cả khi không biết lập trình. ET Club luôn tìm kiếm những bạn có tinh thần sẵn sàng học hỏi, kết nối và phối hợp.</p><p><strong>Đối với Ban Chuyên môn</strong>, bạn có hai lựa chọn:</p><ul><li><strong>Sub-team Data</strong>: Vòng thử thách của sub-team này tập trung vào kỹ năng xử lý, phân tích dữ liệu và trực quan hóa bằng các bảng, đồ thị. Công việc này không yêu cầu kỹ năng lập trình chuyên sâu.</li><li><strong>Sub-team Dev</strong>: Bài toán đưa ra sẽ yêu cầu bạn phân tích và thiết kế hệ thống web. Ban tổ chức không yêu cầu sản phẩm phải hoàn chỉnh, mà quan trọng là thể hiện được quá trình tìm hiểu và tư duy triển khai của bạn. Điều này khuyến khích bạn tự tìm hiểu công nghệ và các lĩnh vực liên quan.</li></ul><p><strong>Đối với các ban còn lại</strong> như Event, HR, FER và PR, vòng Teamwork sẽ tập trung vào kỹ năng làm việc nhóm, xử lý tình huống và lên kế hoạch tổ chức một sự kiện, không liên quan đến lập trình.</p>"
+  },
+  {
+    "id": "faqs-2",
+    "question": "Chương trình tìm kiếm CTV kéo dài bao lâu?",
+    "answer": "<p>Chương trình tuyển CTV sẽ diễn ra trong khoảng một tháng, từ cuối tháng 9 đến cuối tháng 10 năm 2025:</p><ul><li>Vòng đơn: 24/09/2025 – 09/10/2025</li><li>Vòng phỏng vấn & teamwork: 12/10/2025 – 19/10/2025</li></ul>"
+  },
+  {
+    "id": "faqs-3",
+    "question": "Tuyển những ban gì và công việc của các ban đó như thế nào?",
+    "answer": "<p>Chương trình tuyển CTV lần này tìm kiếm những mảnh ghép phù hợp cho cả 5 ban của ET Club:</p><ul><li><strong>Ban Chuyên môn (Tech)</strong><ul><li>Sub-team Dev: Phân tích và thiết kế hệ thống web.</li><li>Sub-team Data: Xử lý, phân tích và trực quan hóa dữ liệu.</li></ul></li><li><strong>Ban Sự kiện (Event)</strong>: Tổ chức workshop, talkshow, cuộc thi học thuật và các hoạt động nội bộ.</li><li><strong>Ban Nhân sự - Tổ chức (HR)</strong>: Quản lý nhân sự, gắn kết thành viên và xây dựng văn hóa CLB.</li><li><strong>Ban Tài chính - Đối ngoại (FER)</strong>: Quản lý tài chính, tìm kiếm và kết nối đối tác, nhà tài trợ.</li><li><strong>Ban Truyền thông (PR - Media)</strong>: Nội dung, thiết kế hình ảnh, truyền thông trên mạng xã hội.</li></ul>"
+  },
+  {
+    "id": "faqs-4",
+    "question": "Khi nào có kết quả vòng đơn và khi nào phỏng vấn?",
+    "answer": "<p><strong>Kết quả vòng đơn</strong>: Dự kiến từ 10/10/2025 đến 12/10/2025.</p><p><strong>Vòng phỏng vấn:</strong></p><ul><li>Ban Chuyên môn: 12/10/2025 – 19/10/2025</li><li>Các ban khác: 17/10/2025 – 19/10/2025</li></ul>"
+  },
+  {
+    "id": "faqs-5",
+    "question": "Mình có thể ứng tuyển bao nhiêu vị trí công việc?",
+    "answer": "<p>Bạn chỉ nên ứng tuyển vào một vị trí mà bạn cảm thấy phù hợp và yêu thích nhất. Mỗi ban có cách thức phỏng vấn và teamwork riêng biệt, vì vậy việc tập trung vào một vị trí sẽ giúp bạn có sự chuẩn bị tốt nhất.</p><p>Tuy nhiên, nếu sau một thời gian trải nghiệm, bạn cảm thấy vị trí hiện tại không phù hợp, bạn có thể trình bày nguyện vọng với Ban Điều hành. CLB luôn lắng nghe và sẽ xem xét điều chuyển nếu phù hợp với định hướng phát triển và nhu cầu của CLB.</p>"
+  }
 ]
