@@ -13,6 +13,7 @@ export const SeekingBanner = () => {
             <div className="seeking-banner-block">
                 <img loading="lazy" style={{ pointerEvents: "none" }} id="seeking-banner-block-1" src={block2} alt="block" />
             </div>
+            {/* <button class="btn-register">Đăng ký ngay</button> */}
         </div>
     )
 }

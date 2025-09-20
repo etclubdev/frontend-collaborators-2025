@@ -23,7 +23,7 @@
 .core-values-container .title {
     line-height: 2;
     width: fit-content;
-    background: linear-gradient(135deg, #47A8B4 0%, #5D3E91 100%);
+    background: linear-gradient(181deg, #5C53E4 -23.01%, #C778D3 48.92%, #CFAFD4 99.41%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -45,7 +45,7 @@
     display: flex;
     align-items: center;
     gap: 50px;
-    background: #dcfdff3a;
+    background: linear-gradient(90deg, #f29aff56 0%, #abaee185 99.27%);
     border-radius: 10px;
     padding: 10px 20px;
     box-sizing: border-box;
@@ -56,7 +56,7 @@
 }
 
 .core-values-container .value-text {
-    color: #0F4081;
+    color: #6553A7;
     font-weight: 500;
 }
 

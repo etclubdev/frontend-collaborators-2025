@@ -3,30 +3,35 @@
         "id": "fer",
         "department_name": "Ban Tài chính - Đối ngoại",
         "desc": "Ban Tài chính - Đối ngoại đại diện cho ET Club làm cầu nối tới các đối tác doanh nghiệp và nhà tài trợ. Ban vừa chịu trách nhiệm đàm phán, mang về cho CLB những quyền lợi về hỗ trợ tài chính, truyền thông, bảo trợ chuyên môn, vừa phụ trách quản lý và sử dụng hiệu quả nguồn lực tài chính của CLB.",
-        "link": ""
+        "link": "/booklet",
+        "image": "https://res.cloudinary.com/dgqolusci/image/upload/v1758388470/fer_qzzs1v.jpg"
     },
     {
         "id": "pr",
         "department_name": "Ban Truyền thông",
         "desc": "Ban truyền thông gồm 2 tiểu ban là Content và Media (Design, Photo, Video editor). Đây là bộ phận giữ vai trò nòng cốt trong việc xây dựng nội dung, hình ảnh và thương hiệu của CLB, đồng thời sáng tạo và tổng hợp thông tin về các lĩnh vực Công nghệ – Kỹ thuật để đưa hình ảnh CLB đến gần hơn với các bạn sinh viên.",
-        "link": ""
+        "link": "/booklet",
+        "image": "https://res.cloudinary.com/dgqolusci/image/upload/v1758388471/pr_mkibgm.jpg"
     },
     {
         "id": "tech",
         "department_name": "Ban Chuyên môn",
         "desc": "Ban Chuyên môn, tiền thân là Ban Kỹ thuật - Công nghệ – đóng vai trò nòng cốt trong việc thực hiện sứ mệnh học thuật của ET Club, kết nối kiến thức công nghệ với các lĩnh vực kinh tế. Ban chịu trách nhiệm nghiên cứu, phát triển và ứng dụng các giải pháp kỹ thuật nhằm giải quyết các bài toán thực tiễn. Với hai subteam Dev và Data, Ban Chuyên môn là môi trường lý tưởng để sinh viên trau dồi chuyên môn, phát triển các dự án có giá trị và góp phần nâng cao năng lực chung của cộng đồng.",
-        "link": ""
+        "link": "/booklet",
+        "image": "https://res.cloudinary.com/dgqolusci/image/upload/v1758388471/tech_z7ipvx.jpg"
     },
     {
         "id": "event",
         "department_name": "Ban Sự kiện",
         "desc": "Ban Sự kiện là bộ phận chịu trách nhiệm chính trong việc lên kế hoạch, tổ chức và quản lý các chương trình, hoạt động của câu lạc bộ. Với vai trò là người kiến tạo trải nghiệm, Ban Sự kiện góp phần tạo nên những khoảnh khắc đáng nhớ, gắn kết sinh viên thông qua các sự kiện đa dạng và sáng tạo. Mỗi chương trình được tổ chức không chỉ mang tính chuyên môn mà còn thể hiện tinh thần năng động, chuyên nghiệp của CLB.",
-        "link": ""
+        "link": "/booklet",
+        "image": "https://res.cloudinary.com/dgqolusci/image/upload/v1758388471/event_tqgnoc.jpg"
     },
     {
         "id": "hr",
         "department_name": "Ban Nhân sự - Tổ chức",
         "desc": "Ban Nhân sự - Tổ chức tại ET là một bộ phận đóng vai trò then chốt trong việc kết nối tất cả các bộ phận và các ban với nhau. Nhiệm vụ chính của ban là đảm bảo sự phân công nhân lực hợp lý giúp mọi hoạt động trong CLB diễn ra mượt mà, đồng bộ.",
-        "link": ""
+        "link": "/booklet",
+        "image": "https://res.cloudinary.com/dgqolusci/image/upload/v1758388471/hr_o5jqob.jpg"
     }
 ]
