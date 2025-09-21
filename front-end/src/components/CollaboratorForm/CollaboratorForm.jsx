@@ -30,7 +30,7 @@ const className = [
     { form: 'collaborator-form-date', errors: 'collaborator-form-errors' }
 ]
 
-export const CollaboratorForm = ({ form, seekingInfo }) => {
+export const CollaboratorForm = ({ form, seekingInfo, formRef }) => {
     const [isDialogOpen, setIsDialogOpen] = useState(false);
     const [formDataToSubmit, setFormDataToSubmit] = useState(null);
     const [isOpenedNoti, setIsOpenedNoti] = useState(false);
@@ -74,7 +74,7 @@ export const CollaboratorForm = ({ form, seekingInfo }) => {
     };
 
     return (
-        <div className="collaborator-form">
+        <div className="collaborator-form" ref={formRef}>
             {
                 loading && <CircularLoading />
             }

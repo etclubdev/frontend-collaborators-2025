@@ -10,6 +10,7 @@ import { CountDownTimerV2 } from "../../components/CountDownTimerV2";
 import { Slider } from "../../components/Slider";
 import { Faqs } from "../../components/Faqs";
 
+import { useRef } from "react";
 import { useQuery } from '@tanstack/react-query';
 import { getAchievement } from '../../api/achievement.service';
 
@@ -24,21 +25,26 @@ export const LandingPage = () => {
     select: (res) => res?.data?.filter((item) => item.visible) || [],
   });
 
+  const formRef = useRef(null);
+
   return (
     <div className="landing-page">
       {/* <Navbar /> */}
       <SeekingBanner />
       <div className="landing-page-section">
-        <Statistics statistics={data}/>
-        <CoreValues coreValues={coreValues}/>
-        <Slider data={department} activeSlide={2}/>
-        <Faqs faqs={faqs}/>
-        <SeekingProcess seekingProcessInfo={seekingProcessInfo}/>
-        <hr className="division-bar"/>
+        <Statistics statistics={data} />
+        <CoreValues coreValues={coreValues} />
+        <Slider data={department} activeSlide={2} />
+        <Faqs faqs={faqs} />
+        <SeekingProcess seekingProcessInfo={seekingProcessInfo} />
+        <hr className="division-bar" />
         <CountDownTimerV2 targetDate={seekingInfo.date} />
-        <hr className="division-bar"/>
-        <CollaboratorForm form={form} seekingInfo={seekingInfo}/>
+        <hr className="division-bar" />
+        <CollaboratorForm form={form} seekingInfo={seekingInfo} formRef={formRef} />
       </div>
+      <button className="floating-cta" onClick={() => formRef.current?.scrollIntoView({ behavior: 'smooth' })}>
+        Join Us Now
+      </button>
       <Footer />
     </div>
   )
