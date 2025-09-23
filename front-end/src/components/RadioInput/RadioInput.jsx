@@ -22,6 +22,8 @@ export const RadioInput = ({ inputInfo, order, register, errors, className }) =>
         });
     };
 
+    console.log(inputInfo.options);
+    
     return (
         <div className={className.form}>
             <label className="radio-label">
@@ -47,7 +49,7 @@ export const RadioInput = ({ inputInfo, order, register, errors, className }) =>
                                             <span className="department-link">
                                                 <span style={{ color: "red" }}>*</span>
                                                 {"Truy cập đường link sau để lấy bộ câu hỏi và CV mẫu:  "}
-                                                <a target="_blank" rel="noopener noreferrer" href={inputInfo.link || ""} style={{ color: "rgba(221, 131, 224, 0.80) " }}>LINK</a>
+                                                <a target="_blank" rel="noopener noreferrer" href={item.link || ""} style={{ color: "rgba(221, 131, 224, 0.80) " }}>LINK</a>
                                             </span>
                                         </b>
                                     </i>
