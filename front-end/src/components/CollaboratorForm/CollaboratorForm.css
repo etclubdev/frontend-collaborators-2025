@@ -93,8 +93,13 @@
 
 .note-text {
     margin: 0;
-    font-size: 12px;
+    font-size: 14px;
     color: #ff000f;
+}
+
+.note-text ul {
+    margin: 5px 0 0 20px;
+    padding: 0;
 }
 
 .collaborator-form-radio input:checked {
@@ -119,7 +124,7 @@
 
 .department-link {
     display: none;
-    font-size: 12px;
+    font-size: 15px;
     margin: 10px 0 0px 50px;
     color: #000;
 }

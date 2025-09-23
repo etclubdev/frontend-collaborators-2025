@@ -42,11 +42,15 @@ export const RadioInput = ({ inputInfo, order, register, errors, className }) =>
                             {isDepartmentRadio && (
                                 <>
                                     <br />
-                                    <span className="department-link">
-                                        <span style={{ color: "red" }}>*</span>
-                                        {"Truy cập đường link sau để lấy bộ câu hỏi và CV mẫu:  "}
-                                        <a target="_blank" rel="noopener noreferrer" href={inputInfo.link || ""} style={{ color: "rgba(221, 131, 224, 0.80) " }}>LINK</a>
-                                    </span>
+                                    <i>
+                                        <b>
+                                            <span className="department-link">
+                                                <span style={{ color: "red" }}>*</span>
+                                                {"Truy cập đường link sau để lấy bộ câu hỏi và CV mẫu:  "}
+                                                <a target="_blank" rel="noopener noreferrer" href={inputInfo.link || ""} style={{ color: "rgba(221, 131, 224, 0.80) " }}>LINK</a>
+                                            </span>
+                                        </b>
+                                    </i>
                                 </>
                             )}
                         </span>
