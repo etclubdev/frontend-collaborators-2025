@@ -74,11 +74,11 @@
       "label": "Bạn muốn ứng tuyển ban nào?",
       "inputType": "radio",
       "options": [
-        { "id": "tech", "label": "Ban Chuyên môn", "link": "" },
-        { "id": "hr", "label": "Ban Nhân sự - Tổ chức", "link": "" },
-        { "id": "pr", "label": "Ban Truyền thông", "link": "" },
-        { "id": "event", "label": "Ban Sự kiện", "link": "" },
-        { "id": "fer", "label": "Ban Tài chính - Đối ngoại", "link": "" }
+        { "id": "tech", "label": "Ban Chuyên môn", "link": "https://www.canva.com/design/DAGztjeOqeg/hEFsmB4KvkON65Ghumgmqw/edit?utm_content=DAGztjeOqeg&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" },
+        { "id": "hr", "label": "Ban Nhân sự - Tổ chức", "link": "https://www.canva.com/design/DAGztnfHwE4/fu7ahDaFnYfjHEyH3-aQBg/edit?utm_content=DAGztnfHwE4&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" },
+        { "id": "pr", "label": "Ban Truyền thông", "link": "https://www.canva.com/design/DAGzt-6i5JU/gdxtq6O01EzPJaSalx8OSg/edit?utm_content=DAGzt-6i5JU&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" },
+        { "id": "event", "label": "Ban Sự kiện", "link": "https://www.canva.com/design/DAGztpBFDR0/v29KIAmAC3m-Lk-QmZsjmQ/edit?utm_content=DAGztpBFDR0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" },
+        { "id": "fer", "label": "Ban Tài chính - Đối ngoại", "link": "https://www.canva.com/design/DAGztjo7Ols/v8nP8COJ5jMpgp5sUXNJVQ/edit?utm_content=DAGztjo7Ols&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" }
       ]
     },
     {
