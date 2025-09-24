@@ -2,7 +2,7 @@ import { bookletLink } from '../../constants';
 
 export const Booklet = () => {
     return (
-        <div style={{ width: '100vw', height: '100vh' }}>
+        <div style={{ width: '100vw', height: '100vh', overflow: 'hidden' }}>
             <iframe
                 src={bookletLink}
                 width="100%"
