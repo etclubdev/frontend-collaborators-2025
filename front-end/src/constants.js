@@ -82,4 +82,4 @@ export const footerLinks = [
     }
 ]
 
-export const bookletLink = "https://heyzine.com/flip-book/2f99e98868.html";    
+export const bookletLink = "https://heyzine.com/flip-book/527ced50e7.html";    
