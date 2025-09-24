@@ -10,7 +10,7 @@ export const Faqs = ({ faqs }) => {
     <div className="faqs-section">
       <div className='faqs-header'>
         <Heading className="faqs-title" level={1}>NHỮNG CÂU HỎI THƯỜNG GẶP</Heading>
-        <p className="faqs-desc">Dưới đây là tổng hợp một số câu hỏi thường gặp nhất trong đợt Tuyển thành viên của ET Club. Hy vọng các thông tin sẽ có thể hỗ trợ bạn trong quá trình ứng tuyển.</p>
+        <p className="faqs-desc">Dưới đây là tổng hợp một số câu hỏi thường gặp nhất trong đợt Tìm kiếm CTV của ET Club. Hy vọng các thông tin sẽ có thể hỗ trợ bạn trong quá trình ứng tuyển.</p>
       </div>
       <div className="questions-container">
         {
