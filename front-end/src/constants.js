@@ -22,7 +22,7 @@ export const dialogMessage = {
     }
 };
 
-export const finalUrl = "";
+export const finalUrl = "https://www.etclub.vn";
 
 export const navbarLinks = [
     {
@@ -74,10 +74,10 @@ export const footerLinks = [
     {
         "title": "Follow us",
         "links": [
+            { "id": "facebook", "label": "Facebook", "url": "https://www.facebook.com/ETClub.UEH", "external": true },
             { "id": "facebook-group", "label": "Group cộng đồng", "url": "https://www.facebook.com/groups/955638881998102", "external": true },
             { "id": "linkedin", "label": "Linkedin", "url": "https://www.linkedin.com/company/economic-technology-club-ueh/?originalSubdomain=vn", "external": true },
             { "id": "youtube", "label": "Youtube", "url": "https://www.youtube.com/c/C%C3%A2ul%E1%BA%A1cb%E1%BB%99C%C3%B4ngNgh%E1%BB%87KinhT%E1%BA%BF", "external": true },
-            { "id": "facebook", "label": "Facebook", "url": "https://www.facebook.com/ETClub.UEH", "external": true }
         ]
     }
 ]
