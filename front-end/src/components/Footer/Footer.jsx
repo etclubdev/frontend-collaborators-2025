@@ -42,13 +42,13 @@ export const Footer = () => {
                 <a className="footer-social-link" href={link.url} target="_blank" rel="noopener noreferrer">{link.label}</a>
               </div>
             ) : (
-              <Link
+              <a
                 key={link.id}
-                to={link.url}
+                href={link.url} target="_blank" rel="noopener noreferrer"
                 className={`footer-item-content ${link.id === 'ctv' ? 'ctv' : ''}`}
               >
                 {link.label}
-              </Link>
+              </a>
             ))}
           </div>
         ))}
